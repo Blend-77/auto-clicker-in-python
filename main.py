@@ -4,11 +4,22 @@ from pynput.mouse import Button, Controller
 from pynput.keyboard import Listener, KeyCode
 
 
-delay = 0.001
+delay = 20
 button = Button.left
 start_stop_key = KeyCode(char='s')
 exit_key = KeyCode(char='e')
 
+###
+# intro
+###
+
+print('A simple python autoclicker made by Blend-77')
+print('GitHub Repository: github.com/Blend-77/auto-clicker-in-python/blob/main/main.py')
+print('GitHub: https://github.com/Blend-77')
+print('---'*7)
+print('info')
+print('---'*7)
+print("start/stop key: 's'\nexit key: 'e'")
 
 class ClickMouse(threading.Thread):
     def __init__(self, delay, button):
